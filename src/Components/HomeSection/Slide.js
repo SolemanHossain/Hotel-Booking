@@ -4,6 +4,7 @@ import Data from "./Data"
 const Home = ({ slides }) => {
   const [current, setCurrent] = useState(0)
   const length = slides.length
+  console.log(length);
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1)

@@ -1,10 +1,9 @@
 import React, { useState } from "react"
-import Data from "./Data"
+
 
 const Home = ({ slides }) => {
   const [current, setCurrent] = useState(0)
   const length = slides.length
-  console.log(length);
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1)
@@ -30,10 +29,10 @@ const Home = ({ slides }) => {
           </button>
         </div>
 
-        {Data.map((slide, index) => {
+        {slides.map((slide, index) => {
           return (
             <div className={index === current ? "slide active" : "slide"} key={index}>
-              {index === current && <img src={slide.image} alt='Home Image' />}
+              {index === current && <img src={'http://localhost:84' + slide.slide_image_1} alt='Home Image' />}
             </div>
           )
         })}

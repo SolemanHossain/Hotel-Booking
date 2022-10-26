@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import "./About.css"
-import AboutCardJson from "./AboutCardJson";
+import AboutJson from "./AboutJson";
 
 const AboutCard = () => {
   const [card, setCard] = useState([]);
@@ -11,10 +11,13 @@ const AboutCard = () => {
   }, [])
   return (
     <div>
-      {
-        card.map(cards => <AboutCardJson cards={cards} />)
-      }
+
+      <AboutJson
+        key={card.uuid}
+        cards={card} />
+
     </div>
+
 
   );
 };
@@ -43,4 +46,10 @@ export default AboutCard
          </div>
        </div>
      </div>
+
+      <div>
+      {
+        card.map(cards => <AboutCardJson cards={cards} />)
+      }
+    </div>
  </>*/

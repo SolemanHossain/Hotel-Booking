@@ -5,7 +5,7 @@ import AboutJson from "./AboutJson";
 const AboutCard = () => {
   const [card, setCard] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:84/drupal/aboutus?_format=json')
+    fetch('http://hahnvilla.de.w01d64e5.kasserver.com/drupal/aboutus?_format=json')
       .then(res => res.json())
       .then(data => setCard(data));
   }, [])

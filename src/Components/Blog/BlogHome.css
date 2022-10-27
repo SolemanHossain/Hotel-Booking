@@ -4,6 +4,7 @@
   border-radius: 5px;
   margin-bottom: 20px;
 }
+
 .blog .items {
   padding: 20px;
   background-color: #fff;
@@ -11,44 +12,52 @@
   border-radius: 5px;
   transition: 0.5s ease-in-out;
 }
+
 .category span {
   font-size: 14px;
   color: grey;
   transition: 0.5s ease-in-out;
 }
+
 .category label {
-  background-color: #31b675;
+  background-color: #3187b6;
   font-size: 13px;
   color: white;
   padding: 5px 15px;
   border-radius: 5px;
   transition: 0.5s ease-in-out;
 }
+
 .blog .items h3 {
   margin: 5px 0 10px 0;
   font-weight: 500;
   transition: 0.5s ease-in-out;
 }
+
 .blog .items p {
   font-size: 14px;
   color: grey;
   margin-bottom: 10px;
   transition: 0.5s ease-in-out;
 }
+
 .blog .items a {
   color: black;
   font-weight: 500;
   font-size: 14px;
   transition: 0.5s ease-in-out;
 }
+
 .blog .items a i {
-  color: #31b675;
+  color: #3181b6;
   transition: 0.5s ease-in-out;
 }
+
 .blog .items:hover {
-  background-color: #31b675;
+  background-color: #3185b6;
   cursor: pointer;
 }
+
 .blog .items:hover h3,
 .blog .items:hover span,
 .blog .items:hover a,
@@ -56,37 +65,46 @@
 .blog .items:hover p {
   color: white;
 }
+
 .blog .items:hover label {
   background-color: #fff;
-  color: #31b675;
+  color: #318cb6;
   cursor: pointer;
 }
+
 /*---------blog single page------*/
 .category-list {
   color: black;
 }
+
 .category-list h1 {
   font-size: 30px;
 }
+
 .category-list hr {
   border: none;
-  border-bottom: 3px dotted #31b675;
+  border-bottom: 3px dotted #317fb6;
   width: 100px;
 }
+
 .category-list ul {
   margin-top: 20px;
 }
+
 .category-list ul li {
   margin-bottom: 15px;
   transition: 0.5s;
 }
+
 .category-list ul li:hover {
-  color: #31b675;
+  color: #3187b6;
   transform: translateX(10px);
   cursor: pointer;
 }
+
 .category-list i {
-  color: #31b675;
+  color: #3185b6;
   margin-right: 20px;
 }
+
 /*---------blog single page------*/

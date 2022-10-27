@@ -1,5 +1,5 @@
 .navbar {
-  background: #447f76;
+  background: #44637f;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -24,7 +24,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #31b675;
+  color: #3178b6;
 }
 
 .nav-links-mobile {
@@ -86,7 +86,7 @@ nav i {
   }
 
   nav ul.active {
-    background: #31b675;
+    background: #316db6;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -129,7 +129,7 @@ header a {
 
 header i {
   font-size: 40px;
-  color: #31b675;
+  color: #316fb6;
   margin-right: 15px;
 }
 

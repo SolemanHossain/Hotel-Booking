@@ -25,7 +25,7 @@ const AboutJson = ({ cards }) => {
                 <div className='row image'>
                     {cards.map((value) => {
                         return (
-                            <img src={'http://localhost:84' + value.image} alt='' />
+                            <img src={'http://hahnvilla.de.w01d64e5.kasserver.com' + value.image} alt='' />
                         )
 
                     })}

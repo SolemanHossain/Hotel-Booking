@@ -1,52 +1,32 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import PopularData from "./PopData"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import PopularJson from "./PopularJson"
 
-const SampleNextArrow = (props) => {
-  const { onClick } = props
-  return (
-    <div className='control-btn' onClick={onClick}>
-      <button className='next'>
-        <i className='fa fa-long-arrow-alt-right'></i>
-      </button>
-    </div>
-  )
-}
-const SamplePrevArrow = (props) => {
-  const { onClick } = props
-  return (
-    <div className='control-btn' onClick={onClick}>
-      <button className='prev'>
-        <i className='fa fa-long-arrow-alt-left'></i>
-      </button>
-    </div>
-  )
-}
 
 const Cards = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 2,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-    responsive: [
-      {
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-    ],
-  }
+  const [room, setRoom] = useState([]);
+  useEffect(() => {
+    fetch('http://hahnvilla.de.w01d64e5.kasserver.com/drupal/popularroom?_format=json')
+      .then(res => res.json())
+      .then(data => setRoom(data))
+  }, [])
   return (
-    <>
+    <div>
+      <PopularJson
+        rooms={room}
+      />
+
+    </div>
+  );
+};
+
+export default Cards
+
+/*
+<>
       <Slider {...settings}>
         {PopularData.map((value) => {
           return (
@@ -80,7 +60,54 @@ const Cards = () => {
         })}
       </Slider>
     </>
+
+
+
+
+const SampleNextArrow = (props) => {
+  const { onClick } = props
+  return (
+    <div className='control-btn' onClick={onClick}>
+      <button className='next'>
+        <i className='fa fa-long-arrow-alt-right'></i>
+      </button>
+    </div>
+  )
+}
+const SamplePrevArrow = (props) => {
+  const { onClick } = props
+  return (
+    <div className='control-btn' onClick={onClick}>
+      <button className='prev'>
+        <i className='fa fa-long-arrow-alt-left'></i>
+      </button>
+    </div>
   )
 }
 
-export default Cards
+
+/ Seetings part/
+
+const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+    ],
+
+  }
+
+
+    */

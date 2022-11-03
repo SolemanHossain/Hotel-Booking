@@ -1,6 +1,7 @@
 import React from "react"
 import Cards from "./Cards"
 import "./MostPopular.css"
+import PopularJson from "./PopularJson"
 
 const MostPopular = () => {
   return (

@@ -1,16 +1,32 @@
 {
-  "posts": [
+  "slider": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "slide_image_1": "/drupal/sites/default/files/2022-10/slider-4.jpg",
+      "uuid": "ba609e88-9ec2-4f28-b4fa-41d3f188a130"
+    },
+    {
+      "slide_image_1": "/drupal/sites/default/files/2022-10/slider-7_0.jpg",
+      "uuid": "b0b12591-f9ec-4cf4-8efa-8a1f78312b16"
+    },
+    {
+      "slide_image_1": "/drupal/sites/default/files/2022-10/slider-5.jpg",
+      "uuid": "ce4b555c-52f4-4302-a747-43a038ac48c6"
     }
   ],
-  "comments": [
+  "aboutus": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "About US Image",
+      "image": "/drupal/sites/default/files/2022-10/about-img-1_0.jpg",
+      "body": "",
+      "details": "",
+      "uuid": "e940f8e9-4d09-4e34-8e34-976c70429fe1"
+    },
+    {
+      "title": "About Us Text",
+      "image": "",
+      "body": "\u003Cp\u003EWe\u003Cstrong\u003E\u00a0Provide Best Service\u003C/strong\u003E\u00a0to Our Customer\u003C/p\u003E\n\n\u003Cp\u003E\u00a0\u003C/p\u003E",
+      "details": "Our Villa is very beautiful near the sea beach,Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur piscing elit amet consectetur adipiscing elit sed et eletum nulla eu placerat felis etiam tincidunt orci lacus id varius dolor fermum sit amet.Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur piscing elit amet consectetur adipiscing elit sed et eletum nulla eu placerat felis etiam tincidunt orci lacus id varius dolor fermum sit amet.",
+      "uuid": "2b451c9d-3837-4406-bd95-e6aae5b40361"
     }
   ],
   "profile": {

@@ -5,6 +5,7 @@ import About from "./Components/About/About"
 import Gallery from "./Components/gallery/Gallery"
 //import Destinations from "./Components/Destinations/Destinations"
 //import DHome from "./Components/Destinations/Home"
+
 import Destinations from "./Components/Destinations/Home"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"

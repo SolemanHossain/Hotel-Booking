@@ -31,7 +31,7 @@ const Home = ({ slides }) => {
 
         {slides.map((slide, index) => {
           return (
-            <div className={index === current ? "slide active" : "slide"} key={index}>
+            <div className={index === current ? "slide active" : "slide"}  key={index}>
               {index === current && <img src={'http://hahnvilla.de.w01d64e5.kasserver.com' + slide.slide_image_1} alt='Home Image' />}
             </div>
           )

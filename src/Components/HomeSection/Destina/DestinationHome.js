@@ -1,6 +1,5 @@
 import React from "react"
 import "../popular/MostPopular.css"
-//import Dcards from "../../Destinations/Dcards"
 import AllItem from "../../Destinations/AllItem"
 
 const DestinationHome = () => {
@@ -8,11 +7,9 @@ const DestinationHome = () => {
     <>
       <section className='popular top'>
         <div className='full_container'>
-          <div className='heading'>
-            <h1>Most Popular Villa</h1>
-            <div className='line'></div>
+          <div className='heading heading_nearest_visiting_places'>
+          <span class="Text customHeadingHomePage underline_hover">Nearest Places to Visit</span>
           </div>
-
           <div className='content'>
             <AllItem />
           </div>

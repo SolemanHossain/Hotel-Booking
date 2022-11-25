@@ -1,3 +1,4 @@
+
 footer {
   background-color: rgb(42, 41, 41);
   color: white;
@@ -81,4 +82,28 @@ footer .primary-btn {
   footer .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.padding{
+  padding-right: 5%;
+}
+
+.icon-location{
+  padding-right: 10px;
+}
+
+.icon-call{
+  padding-right: 10px;
+}
+.icon-direction{
+  padding-right: 10px;
+}
+
+/*twitter, facebook,youtube*/
+.customIcontheme:hover{
+  background-color: #0087ca;
+  color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  animation: 3s linear .1s colorIt;
 }

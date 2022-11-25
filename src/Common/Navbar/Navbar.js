@@ -9,98 +9,25 @@ const Navbar = () => {
   const closeMobileMenu = () => setClick(false)
   return (
     <>
-      <nav className='navbar'>
-        <div className='container flex_space'>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? "fas fa-times" : " fas fa-bars"}></i>
-          </div>
-
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li>
-              <Link to='/' onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to='/about' onClick={closeMobileMenu}>
-                About us
-              </Link>
-            </li>
-            <li>
-              <Link to='/gallery' onClick={closeMobileMenu}>
-                Gallery
-              </Link>
-            </li>
-            <li>
-              <Link to='/destinations' onClick={closeMobileMenu}>
-                Rooms
-              </Link>
-            </li>
-            <li>
-              <Link to='/blog' onClick={closeMobileMenu}>
-                Activity
-              </Link>
-            </li>
-            <li>
-              <Link to='/testimonial' onClick={closeMobileMenu}>
-                Testimonial
-              </Link>
-            </li>
-            <li>
-              <Link to='/contact' onClick={closeMobileMenu}>
-                Contact Us
-              </Link>
-            </li>
-          </ul>
-
-          <div className='login-area flex'>
-            <li>
-              <Link to='/sign-in'>
-                <i class='far fa-chevron-right'></i>Sign in
-              </Link>
-            </li>
-            <li>
-              <Link to='/register'>
-                <i class='far fa-chevron-right'></i>Register
-              </Link>
-            </li>
-            <li>
-              <Link to='/contact'>
-                <button className='primary-btn'>Request a Quote</button>
-              </Link>
-            </li>
-          </div>
-        </div>
-      </nav>
-
       <header>
         <div className='container flex_space'>
           <div className='logo'>
-            <img src='images/logo.png' alt='' />
+            <img height='auto' width='171' src='images/hahn.png' alt='hahn' />
           </div>
 
-          <div className='contact flex_space '>
+          <div className='contact flex_space'>
             <div className='box flex_space'>
               <div className='icons'>
-                <i class='fal fa-clock'></i>
-              </div>
-              <div className='text'>
-                <h4>Working Hours</h4>
-                <Link to='/contact'>Monday - Friday: 9.00am to 6.00pm</Link>
-              </div>
-            </div>
-            <div className='box flex_space'>
-              <div className='icons'>
-                <i class='fas fa-phone-volume'></i>
+                <i class='icon-phone-1'></i>
               </div>
               <div className='text'>
                 <h4>Call Us</h4>
-                <Link to='/contact'>+011 123 4567</Link>
+                <Link to='/contact'>+011-1234567</Link>
               </div>
             </div>
             <div className='box flex_space'>
               <div className='icons'>
-                <i class='far fa-envelope'></i>
+                <i class="icon-mail"></i>
               </div>
               <div className='text'>
                 <h4>Mail Us</h4>
@@ -110,6 +37,58 @@ const Navbar = () => {
           </div>
         </div>
       </header>
+      <nav className='navbar'>
+        <div className='container flex_space'>
+          <div className='menu-icon' onClick={handleClick}>
+            <i className={click ? "fas fa-times" : " fas fa-bars"}></i>
+          </div>
+
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li>
+
+              <Link to='/' onClick={closeMobileMenu}>
+                <span class="icon icon-home"></span>
+                <span class="customHeading_2Size">Home</span>
+              </Link>
+            </li>
+            <li>
+              <Link to='/about' onClick={closeMobileMenu}>
+                <span class="customHeading_2Size">About Us</span>
+              </Link>
+            </li>
+            <li>
+              <Link to='/gallery' onClick={closeMobileMenu}>
+                <span class="customHeading_2Size">Gallery</span>
+              </Link>
+            </li>
+            <li>
+              <Link to='/destinations' onClick={closeMobileMenu}>
+                <span class="customHeading_2Size">Rooms</span>
+              </Link>
+            </li>
+            <li>
+              <Link to='/blog' onClick={closeMobileMenu}>
+                <span class="customHeading_2Size">Activity</span>
+              </Link>
+            </li>
+            <li>
+              <Link to='/contact' onClick={closeMobileMenu}>
+                <span class="customHeading_2Size">Contact</span>
+              </Link>
+            </li>
+          </ul>
+
+          <div className='login-area flex'>
+            <li>
+              <Link to='/contact'>
+                <button className='custom-round-buttons custom-button'><span class="customHeading_2Size">Request a quote</span></button>
+              </Link>
+            </li>
+          </div>
+        </div>
+      </nav>
+
+
     </>
   )
 }

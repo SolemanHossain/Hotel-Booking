@@ -8,13 +8,13 @@ const Wdata = [
   {
     id: 1,
     cover: "/images/works/work-3.png",
-    title: "Find the Lowest Room Prices",
+    title: "Book Your Room",
     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur piscing elit amet consectetur adipiscing elit sed et eletum.",
   },
   {
     id: 1,
     cover: "/images/works/work-2.png",
-    title: "Find the Right Villa for You",
+    title: "Wait for the Confirmation of booking",
     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur piscing elit amet consectetur adipiscing elit sed et eletum.",
   },
 ]

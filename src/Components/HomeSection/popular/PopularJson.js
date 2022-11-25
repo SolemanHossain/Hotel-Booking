@@ -29,7 +29,7 @@ const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 2,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -50,7 +50,6 @@ const settings = {
 const PopularJson = ({ rooms }) => {
 
     return (
-
         <>
             <Slider {...settings}>
                 {rooms.map((value) => {
@@ -59,10 +58,7 @@ const PopularJson = ({ rooms }) => {
                             <div className='cards'>
                                 <div className='item'>
                                     <div className='imgae'>
-
                                         <img src={'http://hahnvilla.de.w01d64e5.kasserver.com' + value.image} alt='' />
-
-
                                         {/*<img src={value.image} alt='' />*/}
                                         <i className='fas fa-map-marker-alt'>
                                             {/* <label>{value.country}</label>*/}

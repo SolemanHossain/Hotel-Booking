@@ -1,10 +1,102 @@
 .desi .title {
   margin: 0;
-  background-color: #3185b6;
+  color: #3185b6;
 }
 
 .desi h3 {
   margin: 0;
   padding: 15px 0 15px 0;
   color: white;
+}
+
+/*All time*/
+.font-color{
+  color: #3185b6;
+}
+.popular .imgae {
+  position: relative;
+}
+
+.popular .imgae i {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  margin: 20px;
+}
+
+.popular .imgae i label {
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+/*Dcards*/
+
+/* .custom-image_left_side{
+  width: 25%;
+  height: 25%;
+  position: absolute;
+  margin-left:5em;
+  transform: translate(0%,100%);
+  opacity: 0.6;
+}  */
+.custom-image{
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  left:0%;
+  margin-left: 15em;
+  transform: translate(0%,0%);
+}
+/* .custom-image_right_side{
+  width: 25%;
+  height: 25%;
+  position: absolute;
+  right: 0%;
+  margin-right:7em;
+  transform: translate(0%,-290%);
+  opacity: 0.6;
+}  */
+.custom-font-size{
+  font-size: x-large;
+  font-weight: 500;
+  font-family: sans-serif;
+  font-style: normal;
+  left: 100%;
+  color: #0087ca;
+  transform: translate(0%,0%);
+}
+
+.custom-font-size:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+.image-block{
+  position: inherit;
+}
+
+.block-description{
+  position:absolute;
+  width: 40%;
+  height: 40%;
+  left: 50%;
+  margin-right:6em;
+  transform: translate(0%,-180%);
+}
+
+.block-link{
+  position:absolute;
+  width: 40%;
+  height: 10%;
+  left: 50%;
+  margin-right:6em;
+  transform: translate(0%,-350%);
+}
+.block-accessibility{
+  position:absolute;
+  width: 40%;
+  height: 10%;
+  left: 50%;
+  margin-right:6em;
+  transform: translate(0%,-440%);
 }

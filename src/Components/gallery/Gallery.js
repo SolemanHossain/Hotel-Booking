@@ -8,16 +8,14 @@ const Gallery = () => {
   return (
     <>
       <HeadTitle />
-
-      <section className='gallery top'>
+       <section className='gallery top'>
         <div className='container grid'>
           {GalleryData.map((value) => {
             return <Cards imgaes={value.img} title={value.title} />
           })}
         </div>
-      </section>
+      </section> 
     </>
   )
 }
-
 export default Gallery

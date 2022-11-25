@@ -8,11 +8,12 @@ const MostPopular = () => {
     <>
       <section className='popular top'>
         <div className='full_container'>
-          <div className='heading'>
-            <h1>Most Popular Room</h1>
-            <div className='line'></div>
+          <div className='heading heading_popular_rooms'>
+            <span class="underline_hover customHeadingHomePage">Hahn Villa - Seville</span>
           </div>
-
+          <center>
+            <div><input  class = "search_location_villa" type="text" placeholder="Enter your location"></input></div>
+          </center>
           <div className='content'>
             <Cards />
           </div>

@@ -115,3 +115,10 @@
     width: 100%;
   }
 }
+
+.custom-font-color{
+  color: black;
+}
+.custom-font-color-blue{
+  color: #0087ca;
+}

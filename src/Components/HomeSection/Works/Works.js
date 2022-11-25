@@ -10,13 +10,12 @@ const Works = () => {
       <section className='popular works'>
         <div className='container'>
           <div className='heading'>
-            <h1>How we Works </h1>
-            <div className='line'></div>
+            <span class="Text customHeadingHomePage underline_hover">How It Works</span>
           </div>
 
           <div className='content grid'>
             {Wdata.map((value, index) => {
-              return <Card key={index} cover={value.cover} title={value.title} desc={value.desc} />
+              return <Card class="custom_box_shadowing" key={index} cover={value.cover} title={value.title} desc={value.desc} />
             })}
           </div>
         </div>

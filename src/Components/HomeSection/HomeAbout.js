@@ -6,7 +6,7 @@ const About = () => {
     <>
       <section className='homeabout'>
         <div className='container top'>
-          <AboutCard />
+          {/* <AboutCard /> */}
         </div>
       </section>
     </>

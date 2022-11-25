@@ -1,0 +1,163 @@
+.customHeadingHomePage {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+.customHeading_4Size {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #0087ca;
+}
+.customHeading_5Size {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #0087ca;
+}
+
+.customHeading_6Size {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #0087ca;
+}
+
+.customHeadingSize {
+  font-size: large;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.customHeading_2Size {
+  font-size: large;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.customHeading_3Size {
+  font-size: medium;
+  font-weight: 250;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.custom_hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.custom_hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.custom_hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/*Quick Links Section*/
+.custom_quick_links_hover {
+  position: relative;
+  color: white;
+}
+
+.custom_quick_links_hover:hover{
+  color: #0087ca;
+  text-decoration:underline;
+}
+
+/*Star Ratings*/
+.custom-star-background {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-star-wrapper {
+  transform: translate(-3%, 10%);
+  position: absolute;
+  direction: rtl;
+}
+.custom-star-wrapper:hover {
+  font-size: 2.0em;
+}
+.custom-star-wrapper a {
+  font-size: 1.5em;
+  color: rgb(108, 89, 89);
+  text-decoration: none;
+  transition: all 0.5s;
+  margin: 4px;
+}
+
+.custom-star-wrapper a:hover {
+  color: gold;
+  transform: scale(1.5);
+}
+
+.c-s1:hover~a {
+  color: gold;
+  font-size: 1em;
+}
+
+.c-s2:hover~a {
+  color: gold;
+  font-size: 1em;
+}
+
+.c-s3:hover~a {
+  color: gold;
+  font-size: 1em;
+}
+
+.c-s4:hover~a {
+  color: gold;
+  font-size: 1em;
+}
+
+.c-s5:hover~a {
+  color: gold;
+  font-size: 1em;
+}
+
+.wraper {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+}
+
+/*Icon Size*/
+.custom-Icons {
+  font-size: 1.5em;
+}
+
+/*Round corner buttons*/
+.custom-round-buttons {
+  border-radius: 10px;
+}
+.custom-button{
+  background-color: #0087ca;
+  border: none;
+  font-size: 12px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.custom-button:hover{
+  border: 2px solid #0087ca;
+  background-color: transparent;
+  font-size: 14px;
+  color: #0087ca;
+}

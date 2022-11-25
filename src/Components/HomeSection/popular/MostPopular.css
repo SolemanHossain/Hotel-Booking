@@ -14,7 +14,12 @@
 }
 
 .popular img {
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  position: relative;
+  border-radius: 10px;
 }
 
 .popular .card {
@@ -142,3 +147,32 @@
     right: 42%;
   }
 }
+
+/**/
+input[type="text"]{
+  border-radius: 10px;
+  width: 20%;
+  background-image: url('../popular/searchicon_1.png');
+  background-size: 4%;
+  background-position: left;
+  background-repeat: no-repeat;
+  -moz-border-radius:20px;
+  -webkit-border-radius:20px;
+}
+
+input[type="text"]:focus{
+  border-radius: 10px;
+  width: 25%;
+  transition: width 0.3s ease-in-out;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+}
+
+.heading_popular_rooms{
+  padding-bottom: 20px;
+}
+  /*Destina*/
+
+.Destina .heading_popular_rooms{
+  padding-bottom: 20px;
+} 

@@ -7,7 +7,6 @@ const About = () => {
   return (
     <>
       <HeadTitle />
-
       <section className='about top'>
         <div className='container'>
           <AboutCard />
@@ -22,7 +21,7 @@ const About = () => {
             </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur piscing elit amet consectetur adipiscing elit sed et eletum nulla eu placerat felis etiam tincidunt orci lacus id varius dolor fermum sit amet.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur piscing elit amet consectetur adipiscing elit sed et eletum nulla eu placerat felis etiam tincidunt orci lacus id varius dolor fermum sit amet.</p>
-            <button className='secondary-btn'>
+            <button className='secondary-btn custom-round-buttons'>
               Explore More <i className='fas fa-long-arrow-alt-right'></i>
             </button>
           </div>

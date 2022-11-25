@@ -1,7 +1,9 @@
 import React from "react"
+//import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 import "./Footer.css"
 import { Link } from "react-router-dom"
-
+import { Row } from "react-bootstrap"
 
 const Footer = () => {
   return (
@@ -9,74 +11,68 @@ const Footer = () => {
       <footer>
         <div className='container grid'>
           <div className='box'>
-            <h2>ABOUT US</h2>
-            <p>Lorem ipsum dolor sit amet sectetur adipiscing elit amet consectetur scing elit amet consectetur adipiscing elit sed et eletum.</p>
-            <br />
-            <p>Lorem ipsum dolor sit amet sectetur adipiscing elit amet consectetur scing elit amet.</p>
-            <div className='icon flex_space'>
-              <i className='fab fa-facebook-f'></i>
-              <i className='fab fa-twitter'></i>
-              <i className='fab fa-linkedin'></i>
-              <i className='fab fa-instagram'></i>
-              <i className='fab fa-pinterest'></i>
-              <i className='fab fa-youtube'></i>
+            <span class="Text customHeadingSize custom_hover-underline-animation">Follow Us</span>
+            <div className='icon custom-Icons'>
+              <span class="padding"><a href="#"><i className='icon-twitter customIcontheme'></i></a></span>
+              <span class="padding"><a href="#"><i className='icon-facebook customIcontheme'></i></a></span>
+              <span class="padding"><a href="#"><i className='icon-instagram customIcontheme'></i></a></span>
+              <span class="padding"><a href="#"><i className='icon-youtube customIcontheme'></i></a></span>
             </div>
           </div>
 
           <div className='box'>
-            <h2>NAVIGATION</h2>
-            <ul>
-              <li>
-                <Link to='/'>Home</Link>
-              </li>
-              <li>
-                <Link to='/about'>About us</Link>
-              </li>
-              <li>
-                <Link to='/gallery'>Gallery</Link>
-              </li>
-              <li>
-                <Link to='/destinations'>Destinations</Link>
-              </li>
-              <li>
-                <Link to='/blog'>Blog</Link>
-              </li>
-              <li>
-                <Link to='/testimonial'>Testimonial</Link>
-              </li>
-              <li>
-                <Link to='/contact'>Contact Us</Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className='box post'>
-            <h2>RECENT POSTS</h2>
-            <ul>
-              <li>
-                <p>Lorem ipsum dolor sit amet sectetur adipiscing elit amet</p>
-                <label className='fa fa-calendar-alt'></label>
-                <span>01 Oct 2020</span>
-              </li>
-              <li>
-                <p>Lorem ipsum dolor sit amet sectetur adipiscing elit amet</p>
-                <label className='fa fa-calendar-alt'></label>
-                <span>01 Oct 2020</span>
-              </li>
-              <li>
-                <p>Lorem ipsum dolor sit amet sectetur adipiscing elit amet</p>
-                <label className='fa fa-calendar-alt'></label>
-                <span>01 Oct 2020</span>
-              </li>
-            </ul>
+            <span class="Text customHeadingSize custom_hover-underline-animation">Quick Links</span>
+              <ul class="icon list-unstyled">
+                <li>
+                  <Link to='/'><span class="Text custom_quick_links_hover">Home</span></Link>
+                </li>
+                <li>
+                  <Link to='/gallery'><span class="Text custom_quick_links_hover">Gallery</span></Link>
+                </li>
+                <li>
+                  <Link to='/blog'><span class="Text custom_quick_links_hover">Blog</span></Link>
+                </li>
+                <li>
+                  <Link to='/destinations'><span class="Text custom_quick_links_hover">Destinations</span></Link>
+                </li>
+              </ul>
           </div>
 
           <div className='box'>
-            <h2>NEWSLETTER</h2>
-            <p>Lorem ipsum dolor sit amet sectetur adipiscing elit amet</p>
-
-            <input type='text' name='' id='' />
-            <input type='text' className='primary-btn' value='SUBSCRIBE' />
+            <span class="text customHeadingSize custom_hover-underline-animation">Contact Us</span>
+            <div class="icon box block-23 mb-3 flex_space">
+              <ul>
+                <li><a href="#"><span class="icon icon-location"></span><span class="text custom_quick_links_hover">Marcusallee 38, 28359 Bremen</span></a></li>
+                <li><a href="#"><span class="icon icon-call"></span><span class="text custom_quick_links_hover">+2-392-3929210</span></a></li>
+                <li><a href="#"><span class="icon icon-direction"></span><span class="text custom_quick_links_hover">info@yourdomain.com</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div className='box'>
+            <Row>
+              <Col className = "flex_space">
+              <span class="text customHeadingSize custom_hover-underline-animation">Ratings:</span>
+                <div class="star-background star-wrapper">
+                  <a href="#" class="fas fa-star c-s1"></a>
+                  <a href="#" class="fas fa-star c-s2"></a>
+                  <a href="#" class="fas fa-star c-s3"></a>
+                  <a href="#" class="fas fa-star c-s4"></a>
+                  <a href="#" class="fas fa-star c-s5"></a>
+                </div>
+              </Col>
+            </Row>
+            <div>
+            <Row>
+            <div class="icon box block-23 mb-3 flex_space">
+              <ul>
+                <li><a href="#"><span class="text custom_quick_links_hover">Terms & Conditions</span></a></li>
+                <li><a href="#"><span class="text custom_quick_links_hover">Privacy</span></a></li>
+                <li><a href="#"><span class="text custom_quick_links_hover">Cookies Info</span></a></li>
+              </ul>
+            </div>
+              </Row>
+            </div>
+              
           </div>
         </div>
       </footer>

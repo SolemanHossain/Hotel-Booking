@@ -5,20 +5,20 @@ const AboutJson = ({ cards }) => {
         <>
             <div className='aboutCard mtop flex_space'>
                 <div className='row row1'>
-                    <h4>About Us</h4>
-                    <h1>
-                        We <span>Provide Best Service</span> to Our Customer
-                    </h1>
+                    <span class="customHeading_4Size underline_hover">About Us</span><br/>
+                    <div class="customHeading_5Size custom-font-color">
+                        <p>We<span class="custom-font-color-blue"> Provide Best Service</span> to Our Customer</p>
+                    </div>
+                    <div class="customHeading_6Size custom-font-color">
                     {cards.map((value) => {
                         return (
                             <p>{value.details}</p>
                         )
 
                     })}
-
-
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur piscing elit amet consectetur adipiscing elit sed et eletum nulla eu placerat felis etiam tincidunt orci lacus id varius dolor fermum sit amet.</p>
-                    <button className='secondary-btn'>
+                    </div>
+                    <button className='secondary-btn custom-round-buttons'>
                         Explore More <i className='fas fa-long-arrow-alt-right'></i>
                     </button>
                 </div>
@@ -33,7 +33,7 @@ const AboutJson = ({ cards }) => {
                     {/*<img src='/images/about-img-1.jpg' alt='' />*/}
                     <div className='control-btn'>
                         <button className='prev'>
-                            <i className='fas fa-play'></i>
+                            <i className='icon-play'></i>
                         </button>
                     </div>
                 </div>

@@ -1,6 +1,12 @@
+.rounded-pill{
+  background-color: blue;
+}
 .navbar {
-  background: #4c78ab;
+  background: #15181c;
+  opacity: 0.8;
   position: sticky;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   top: 0;
   z-index: 999;
   height: 10vh;
@@ -128,9 +134,9 @@ header a {
 }
 
 header i {
-  font-size: 40px;
+  font-size: 30px;
   color: #316fb6;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 header .text {
